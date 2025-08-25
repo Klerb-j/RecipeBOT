@@ -5,7 +5,6 @@ from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 from services import ai_search, save_user_search, image_search, show_history
 from config import BOT_TOKEN
 import requests
-from io import BytesIO
 #-------------------------------------------------------------------------#
 
 #\/------------- Поиск Рецепта -------------\/#
@@ -175,5 +174,6 @@ def create_bot():
     )))
 
     return updater
+
 
 #/\------------- Команды Бота --------------/\#
